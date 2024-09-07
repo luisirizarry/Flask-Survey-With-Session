@@ -3,7 +3,7 @@
 {% block title %}Survey Start{% endblock %}
 
 {% block content %}
-    <form action="/questions/{{question_id}}">
+    <form action="/set_session" method="POST">
         <h1>{{ title }}</h1>
         <p>{{ instructions }}</p>
         <button>Start Survey!</button>    
